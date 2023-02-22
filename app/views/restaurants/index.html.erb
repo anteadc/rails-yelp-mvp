@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>All the restaurants</h1>
+  <% @restaurants.each do |rest| %>
+    <div class="card p-3">
+      <h2><%= rest.name %></h2>
+      <p><%= rest.address %></p>
+      <p><%= rest.phone_number %></p>
+      <p><%= rest.category %></p>
+    </div>
+  <% end %>
+</div>
